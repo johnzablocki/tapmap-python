@@ -1,0 +1,43 @@
+<div metal:use-macro="layout">
+    <div metal:fill-slot="content">
+
+
+<script src="/TapMap/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/TapMap/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+<div style="padding: 10px;">
+    New user? <a href="/TapMap/Account/Create">Register</a> here.
+</div>
+<form action="/TapMap/Account/LogOn" class="form-vertical well" method="post">
+<div style="color: Red">
+</div>
+<fieldset>
+    <legend>Login</legend>
+    <div class="editor-label">
+        <label for="Username">
+            Username</label>
+    </div>
+    <div class="editor-field">
+        <input class="text-box single-line" data-val="true" data-val-required="The Username field is required."
+            id="Username" name="Username" type="text" value="" />
+        <span class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true">
+        </span>
+    </div>
+    <div class="editor-label">
+        <label for="Password">
+            Password</label>
+    </div>
+    <div class="editor-field">
+        <input data-val="true" data-val-required="The Password field is required." id="Password"
+            name="Password" type="password" />
+        <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true">
+        </span>
+    </div>
+    <p>
+        <input type="submit" value="Login" />
+    </p>
+</fieldset>
+</form>
+
+
+    </div>
+</div>
